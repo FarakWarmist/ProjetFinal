@@ -1,4 +1,5 @@
 using KinematicCharacterController.Examples;
+using System;
 using UnityEngine;
 
 
@@ -7,12 +8,15 @@ public class MyPlayer : MonoBehaviour
     public ExampleCharacterCamera OrbitCamera;
     public Transform CameraFollowPoint;
     public MyCharacterController Character;
-
+    public AudioSource collectItemSound;
+    private bool hasOldKey;
     private const string MouseXInput = "Mouse X";
     private const string MouseYInput = "Mouse Y";
     private const string MouseScrollInput = "Mouse ScrollWheel";
     private const string HorizontalInput = "Horizontal";
     private const string VerticalInput = "Vertical";
+
+    public bool HasOldKey => hasOldKey;
 
     private void Start()
     {
@@ -76,5 +80,11 @@ public class MyPlayer : MonoBehaviour
 
         // Apply inputs to character
         Character.SetInputs(ref characterInputs);
+    }
+
+    internal void CollectOldKey()
+    {
+        hasOldKey = true;
+        collectItemSound.Play();
     }
 }
