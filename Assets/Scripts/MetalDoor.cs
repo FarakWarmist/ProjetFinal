@@ -13,6 +13,8 @@ public class MetalDoor : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        MyPlayer myPlayer = FindAnyObjectByType<MyPlayer>();
+
         if (!state)
         {
             if (isLocked && FindAnyObjectByType<MyPlayer>().HasOldKey || !isLocked)
@@ -22,6 +24,7 @@ public class MetalDoor : MonoBehaviour, IInteractable
                 metalDoor.GetComponent<Animator>().SetBool("Open", state);
                 metalDoor.GetComponent<AudioSource>().clip = doorOpen;
                 metalDoor.GetComponent<AudioSource>().Play();
+                myPlayer.DestroyOldKey();
 
             }
             else

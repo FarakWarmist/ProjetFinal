@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 0
@@ -347,8 +344,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -773,8 +770,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -1025,8 +1022,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -1272,8 +1269,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -1437,8 +1434,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 115.63296
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 115.63296
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -1766,8 +1763,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -2095,8 +2092,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -2128,9 +2125,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278878186}
   m_Enabled: 0
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 0.092196584, g: 1, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 0.34
@@ -2180,8 +2176,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &278878188
 Transform:
   m_ObjectHideFlags: 0
@@ -2441,8 +2441,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -2630,7 +2630,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: 3dcf68708b30163499b5d6c11dea8538, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: e375f4bdd5728a145859eeb36a1e7a75, type: 2}
     - target: {fileID: 919132149155446097, guid: 3dcf68708b30163499b5d6c11dea8538, type: 3}
@@ -2823,97 +2823,14 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
     offset: 0
     size: 0
     path: 
---- !u!1001 &361918809
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: -0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: -0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -62.11
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.079
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 19.414
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6717207
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.74080455
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 95.6
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_Name
-      value: Key
-      objectReference: {fileID: 0}
-    - target: {fileID: 7484468418975526891, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0b89e83e582e03749ae8d944875ceb7f, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 770199505}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 770199504}
-  m_SourcePrefab: {fileID: 100100000, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
 --- !u!1001 &363861576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2984,7 +2901,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4353896453404184, guid: c75e91cf060bbf04e89204fa400606df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1913672689}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1937979026721672, guid: c75e91cf060bbf04e89204fa400606df, type: 3}
       insertIndex: -1
@@ -3245,8 +3165,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -3574,8 +3494,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -3739,8 +3659,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -3904,8 +3824,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -4099,9 +4019,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487229279}
   m_Enabled: 0
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0.08857536, a: 1}
   m_Intensity: 1
   m_Range: 0.34
@@ -4151,8 +4070,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!43 &489075592
 Mesh:
   m_ObjectHideFlags: 0
@@ -4310,8 +4233,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -4475,8 +4398,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -4640,8 +4563,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -4887,8 +4810,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -5052,8 +4975,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -5217,8 +5140,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 115.63296
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 115.63296
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -5605,8 +5528,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 115.63296
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 115.63296
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -5770,8 +5693,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -6172,8 +6095,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -6416,6 +6339,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6522,7 +6448,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5353462994411793481, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a578c3136a46b2c4d90b543a5c7aa51b, type: 2}
     - target: {fileID: 6041301881144546650, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
@@ -6621,44 +6547,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7026659126284403132, guid: d7e652d6f7f0e4149ba2853117597277, type: 3}
   m_PrefabInstance: {fileID: 750731575}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &770199503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
-  m_PrefabInstance: {fileID: 361918809}
-  m_PrefabAsset: {fileID: 0}
---- !u!135 &770199504
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770199503}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 420.99
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &770199505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770199503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8851efe5b4dd2f847a507da400724017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &770303371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6839,6 +6727,7 @@ MonoBehaviour:
   CameraFollowPoint: {fileID: 1740277156}
   Character: {fileID: 1219715623}
   collectItemSound: {fileID: 1219715624}
+  oldKey: {fileID: 8755777317583235806}
 --- !u!43 &829127307
 Mesh:
   m_ObjectHideFlags: 0
@@ -6996,8 +6885,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -7161,8 +7050,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -7287,6 +7176,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7669,8 +7561,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -7916,8 +7808,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -8163,8 +8055,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -8410,8 +8302,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -8575,8 +8467,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -8740,8 +8632,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -9060,8 +8952,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -9225,8 +9117,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -9302,7 +9194,7 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 5353462994411793481, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a578c3136a46b2c4d90b543a5c7aa51b, type: 2}
     - target: {fileID: 6041301881144546650, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
@@ -9558,8 +9450,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -9866,8 +9758,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -10031,8 +9923,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -10052,9 +9944,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103652056}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 0
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
   m_Range: 20
@@ -10104,8 +9995,17 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &1103652060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4353896453404184, guid: c75e91cf060bbf04e89204fa400606df, type: 3}
+  m_PrefabInstance: {fileID: 363861576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1103884928
 GameObject:
   m_ObjectHideFlags: 0
@@ -10445,8 +10345,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -10610,8 +10510,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -10654,6 +10554,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -10880,8 +10783,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -11045,8 +10948,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -11292,8 +11195,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -11457,8 +11360,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -11583,6 +11486,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11787,6 +11693,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d9ec2d8d07ca29240895a08a878745d3, type: 3}
+  m_Resource: {fileID: 8300000, guid: d9ec2d8d07ca29240895a08a878745d3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -12270,8 +12177,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -12435,8 +12342,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -12600,8 +12507,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -13001,9 +12908,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354290987}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -13053,8 +12959,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &1354290989
 Transform:
   m_ObjectHideFlags: 0
@@ -13238,9 +13148,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397042205}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 0.8679245, g: 0.82572037, b: 0.6673193, a: 1}
   m_Intensity: 1.06
   m_Range: 17.25
@@ -13290,8 +13199,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &1397042207
 Transform:
   m_ObjectHideFlags: 0
@@ -13530,8 +13443,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -13695,8 +13608,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -13942,8 +13855,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -14234,6 +14147,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -14623,8 +14539,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -14870,8 +14786,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -14985,9 +14901,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628348995}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 0.8679245, g: 0.82572037, b: 0.6673193, a: 1}
   m_Intensity: 0.4
   m_Range: 6.9
@@ -15034,11 +14949,15 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 8.652e-42, y: 2.524355e-29, z: 0, w: 1.1940408e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &1628348997
 Transform:
   m_ObjectHideFlags: 0
@@ -15293,8 +15212,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 115.63296
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 115.63296
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -15458,8 +15377,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -15623,8 +15542,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -15932,8 +15851,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -16097,8 +16016,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -16263,6 +16182,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16664,8 +16586,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -16722,6 +16644,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16912,8 +16837,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -17134,8 +17059,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -17304,8 +17229,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -17469,8 +17394,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -17716,14 +17641,46 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
     offset: 0
     size: 0
     path: 
+--- !u!1 &1913672688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913672689}
+  m_Layer: 0
+  m_Name: ItemHoldOffSet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913672689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913672688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.42, y: -1.4, z: 2.198}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8271166070934007908}
+  m_Father: {fileID: 1103652060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1929591059
 GameObject:
   m_ObjectHideFlags: 0
@@ -17821,6 +17778,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -18113,8 +18073,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -18278,8 +18238,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -18355,7 +18315,7 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 5353462994411793481, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a578c3136a46b2c4d90b543a5c7aa51b, type: 2}
     - target: {fileID: 6041301881144546650, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
@@ -18529,8 +18489,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -18694,8 +18654,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -18982,8 +18942,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -19147,8 +19107,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 27.040045
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 27.040045
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -19287,6 +19247,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -19477,8 +19440,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -19844,9 +19807,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130819705}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 0
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -19896,8 +19858,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!43 &2145474924
 Mesh:
   m_ObjectHideFlags: 0
@@ -20055,8 +20021,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 116.35821
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 116.35821
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -20145,6 +20111,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2469098383746397893, guid: 8bebd0d7a68961a4396627bf391106d8, type: 3}
   m_PrefabInstance: {fileID: 562173811145898955}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &609944507893492335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6800701794761273567}
+  - component: {fileID: 7902376410757059595}
+  - component: {fileID: 1341369663130433636}
+  m_Layer: 0
+  m_Name: pCylinder6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1341369663130433636
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609944507893492335}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 92654f00fed9f554290ad0ad283c2c9d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &1402121676388557122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20435,7 +20464,7 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 5353462994411793481, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a578c3136a46b2c4d90b543a5c7aa51b, type: 2}
     - target: {fileID: 6041301881144546650, guid: 88f76550dab4bd347b72bceb373a6262, type: 3}
@@ -20534,6 +20563,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1987896225516836925, guid: 56fd5be9a38b1dc4d8e028ac608f63c7, type: 3}
   m_PrefabInstance: {fileID: 6278352202573077120}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &6800701794761273567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609944507893492335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8271166070934007908}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7121726447601981926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20616,6 +20660,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6063615492484195426, guid: cc7fe225da882ac4394a3d63d88254df, type: 3}
   m_PrefabInstance: {fileID: 7121726447601981926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7381043077020604504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -62.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6717207
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.74080455
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 95.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8271166071463903921, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755777318295623691, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
+      propertyPath: m_Name
+      value: Key
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cebf18394c6589f449fe82d3c66250a4, type: 3}
 --- !u!1001 &7575619197779707549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20780,6 +20881,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 840437915019740218, guid: 66a12fb9eb3a92b4ebcd1e22706ff95c, type: 3}
   m_PrefabInstance: {fileID: 7710392604659614552}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &7902376410757059595
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609944507893492335}
+  m_Mesh: {fileID: -9010193167645078742, guid: bd1f0946a84b9d94389d52f622e9edc4, type: 3}
+--- !u!4 &8271166070934007908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755777317583235806}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.11289493, y: -0.2788618, z: -0.6932122, w: 0.65494096}
+  m_LocalPosition: {x: -2.859, y: 1.017, z: -1.445}
+  m_LocalScale: {x: -0.001, y: -0.001, z: -0.001}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 6800701794761273567}
+  m_Father: {fileID: 1913672689}
+  m_LocalEulerAnglesHint: {x: -32.31, y: -14.3, z: -89.09}
 --- !u!1001 &8548952121798170158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20845,6 +20970,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5875e0e916d5be6499a13217b38cd4c3, type: 3}
+--- !u!1 &8755777317583235806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8271166070934007908}
+  m_Layer: 0
+  m_Name: Key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -20858,7 +20999,7 @@ SceneRoots:
   - {fileID: 1546797080}
   - {fileID: 1962805}
   - {fileID: 1103884929}
-  - {fileID: 361918809}
+  - {fileID: 7381043077020604504}
   - {fileID: 8548952121798170158}
   - {fileID: 1790692550}
   - {fileID: 1316241694}

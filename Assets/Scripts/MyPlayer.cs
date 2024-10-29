@@ -10,6 +10,7 @@ public class MyPlayer : MonoBehaviour
     public MyCharacterController Character;
     public AudioSource collectItemSound;
     private bool hasOldKey;
+    [SerializeField] GameObject oldKey;
     private const string MouseXInput = "Mouse X";
     private const string MouseYInput = "Mouse Y";
     private const string MouseScrollInput = "Mouse ScrollWheel";
@@ -86,5 +87,12 @@ public class MyPlayer : MonoBehaviour
     {
         hasOldKey = true;
         collectItemSound.Play();
+        oldKey.SetActive(true);
+    }
+
+    internal void DestroyOldKey()
+    {
+        hasOldKey = false;
+        oldKey.SetActive(false);
     }
 }
