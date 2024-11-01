@@ -9,12 +9,14 @@ public class KeypadPuzzle : MonoBehaviour
     public Light redLight;
     // int[] code = new[] { 2, 3, 4, 1};
     public int[] code;
+    [SerializeField] GameObject door; 
 
     int currentIndex;
     private bool isFinished;
 
     internal void OnPress(int number)
     {
+        
         redLight.enabled = false;
 
         if (isFinished)
@@ -26,6 +28,7 @@ public class KeypadPuzzle : MonoBehaviour
             {
                 isFinished = true;
                 greenLight.enabled = true;
+                door.GetComponent<MetalDoor>().isLocked = false;
             }
         }
         else
